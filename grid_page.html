@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="img/миниатюра1.png" type="image/png" />
+		<link rel="stylesheet" href="/css/icons.css" />
+		<link rel="stylesheet" href="/css/grid_style.css" />
+		<link rel="stylesheet" href="/js/scroll.js" />
+		<script
+			src="https://kit.fontawesome.com/8b6feb0dee.js"
+			crossorigin="anonymous"
+		></script>
+
+		<title>BonApe</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="main-head">
+				<nav class="header-navs">
+					<ul class="header-nav">
+						<div class="logo">
+							<a href="#"
+								><img
+									class="header_logo"
+									src="img/лого4.png"
+									alt="съели картинку:("
+								/>
+							</a>
+						</div>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="catalog.html">Выпечка</a></li>
+						<li><a href="#main_gallery">Галерея</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</header>
+			<nav class="main-nav">
+				<aside class="aside">
+					<form action="php/handler.php">
+						<div class="aside_container">
+							<p class="aside_h">Помогите нам стать лучше для вас!</p>
+							<p class="aside_h2">Любите ли Вы нашу выпечку?</p>
+							<div class="radio">
+								<input
+									class="radio_input"
+									id="radio_1"
+									name="like_bakery"
+									type="radio"
+									value="yes"
+								/>
+								<label class="radio_label" for="radio_1"> да </label>
+								<input
+									class="radio_input"
+									id="radio_2"
+									name="like_bakery"
+									type="radio"
+									value="no"
+								/>
+								<label class="radio_label" for="radio_2"> нет </label>
+							</div>
+							<p class="aside_h2">
+								Что для Вас наиболее <br />важно при выборе <br />пекарни?
+							</p>
+							<div class="checkbox">
+								<input
+									class="checkbox_input"
+									id="checkbox_1"
+									type="checkbox"
+									name="a"
+									value="place"
+								/><label class="checkbox_label" for="checkbox_1"
+									>местоположение
+								</label>
+
+								<input
+									class="checkbox_input"
+									id="checkbox_2"
+									type="checkbox"
+									name="a"
+									value="assortment"
+								/>
+								<label class="checkbox_label" for="checkbox_2"
+									>ассортимент
+								</label>
+								<input
+									class="checkbox_input"
+									id="checkbox_3"
+									type="checkbox"
+									name="a"
+									value="prices"
+								/><label class="checkbox_label" for="checkbox_3">цены</label>
+								<input
+									class="checkbox_input"
+									id="checkbox_4"
+									type="checkbox"
+									name="a"
+									value="interior"
+								/><label class="checkbox_label" for="checkbox_4"
+									>интерьер
+								</label>
+							</div>
+							<p class="aside_h2">
+								Выберите, пожалуйста,<br />
+								Вашу любимую<br />выпечку
+							</p>
+							<div class="bakery_list">
+								<p>
+									<select name="bakery">
+										<optgroup label="Сладкая выпечка">
+											<option value="r1">французский багет</option>
+											<option value="r2">банановый хлеб</option>
+											<option value="r3">пончик с вишней</option>
+										</optgroup>
+										<optgroup label="Соленая выпечка">
+											<option value="u1">сэндвич с курицей</option>
+											<option value="u2">круассан соленый</option>
+											<option value="u3">булочка с сыром</option>
+										</optgroup>
+									</select>
+								</p>
+							</div>
+							<p class="send_survey">
+								<input type="submit" value="отправить" />
+							</p>
+							<p class="reset_survey">
+								<input type="reset" value="очистить" />
+							</p>
+						</div>
+					</form>
+				</aside>
+			</nav>
+			<article class="content">
+				<div class="h1">
+					<h1>Из нашей печи до Вашей <br />двери!</h1>
+				</div>
+				<div class="description">
+					<p>
+						Только самое лучшее для вас и ваших <br />
+						близких. Наша философия — создавать<br />
+						натуральный домашний продукт,<br />
+						с любовью и ради любви.<br />
+						Хотите попробовать?
+					</p>
+				</div>
+				<a href="catalog.html"
+					><button class="button_bakery">в пекарню</button></a
+				>
+			</article>
+			<aside class="side">
+				<div class="img">
+					<img src="img/хорошо.png" alt="съели картинку:(" />
+				</div>
+			</aside>
+			<footer class="main-footer">
+				<div class="footer_inner">
+					<div class="footer_left">
+						<p class="adress">Адреса</p>
+						<ul>
+							<li>г. Минск, ул. Максима Горецкого, 32</li>
+							<li>г. Могилёв, пр. Димитрова, 74-3</li>
+						</ul>
+					</div>
+
+					<ul class="social">
+						<li class="social_item">
+							<a
+								href="https://www.youtube.com/watch?v=iik25wqIuFo"
+								target="_blank"
+								><img src="img/tik-tok-svg.svg" alt="съели картинку:("
+							/></a>
+						</li>
+						<li class="social_item">
+							<a
+								href="https://www.youtube.com/watch?v=iik25wqIuFo"
+								target="_blank"
+								><img src="img/instagram-svg.svg" alt=""
+							/></a>
+						</li>
+						<li class="social_item">
+							<a
+								href="https://www.youtube.com/watch?v=iik25wqIuFo"
+								target="_blank"
+								><img src="img/twitter-svg.svg" alt=""
+							/></a>
+						</li>
+					</ul>
+
+					<div class="footer_right">
+						<p class="contacts">Контакты</p>
+						<ul>
+							<li>email@gmail.com</li>
+							<li>+375 29 123 45 67</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
