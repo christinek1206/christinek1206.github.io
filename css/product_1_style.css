@@ -1,0 +1,711 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+	line-height: 1;
+	font-size: 16px;
+	background-color: #e2ded2;
+	color: #451e13;
+	font-family: 'Montserrat';
+}
+
+/* бесполезная вещь с оверфлоу*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+h1 {
+	margin: 0;
+}
+#fon_1 {
+	position: absolute;
+	width: 661px;
+	height: 405.26px;
+	left: -105px;
+	top: 914px;
+	z-index: -1;
+}
+
+#fon_2 {
+	position: absolute;
+	width: 605.18px;
+	height: 509.77px;
+	left: 925.72px;
+	top: 308.39px;
+	z-index: -1;
+}
+#fon_3 {
+	position: absolute;
+	width: 605.18px;
+	height: 609.77px;
+	left: 925.72px;
+	top: 128.39px;
+	z-index: -1;
+}
+/* Container */
+._container {
+	width: 100%;
+	max-width: 936px;
+	margin: 0px auto;
+}
+
+/* header */
+
+.header {
+	right: 0;
+	z-index: 1000;
+}
+
+.header_inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_logo {
+	position: relative;
+	top: -20px;
+	left: -30px;
+	width: 140px;
+	height: 140px;
+}
+
+.nav {
+	padding-right: 0px;
+	font-size: 16px;
+}
+
+.nav_link {
+	top: -24px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px;
+	position: relative;
+	color: #451e13;
+	text-decoration: none;
+	transition: color 0.2s linear;
+}
+.nav_link:hover {
+	color: #9f2f20;
+}
+.nav_link:active {
+	font-weight: 500;
+}
+
+.number {
+	position: relative;
+	top: -18px;
+	margin-right: 35px;
+	text-align: end;
+	font-size: 13px;
+}
+
+.number_text {
+	font-weight: 600;
+	font-size: 16px;
+}
+.fa-phone {
+	top: -18px;
+	font-size: 26px;
+	position: relative;
+	right: -45px;
+	bottom: 4px;
+}
+
+a.fa-solid {
+	text-decoration: none;
+}
+
+header li {
+	margin-bottom: 5px;
+	list-style-type: none;
+}
+
+header ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+header a {
+	color: #451e13;
+}
+
+/* главный блок */
+.main {
+	width: 100%;
+}
+
+.product_main_container {
+	display: flex;
+	align-items: center;
+}
+.preview_container {
+	flex-direction: column;
+}
+
+.preview_rectangle {
+	width: 135.29px;
+	height: 135.29px;
+	margin-bottom: 35px;
+	background: #c7b6a4;
+	border-radius: 20px;
+}
+
+.preview_rectangle img {
+	margin-top: 3px;
+	margin-left: -15px;
+	width: 169.51px;
+	height: 127.33px;
+}
+
+.product_container {
+	margin-top: -35px;
+	margin-left: 40px;
+	width: 358.11px;
+	height: 358.11px;
+
+	background: #c7b6a4;
+	border-radius: 20px;
+}
+
+.product_container img {
+	margin-top: -50px;
+	margin-left: -28px;
+	width: 420.98px;
+	height: 420.98px;
+}
+
+.product_description {
+	width: 360px;
+	margin-top: -35px;
+	margin-left: 40px;
+}
+
+#product_name {
+	margin-top: 0;
+	margin-bottom: -6px;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 43px;
+}
+
+#price {
+	margin-bottom: 16px;
+	font-weight: 400;
+	font-size: 22px;
+}
+
+#product_line {
+	margin-left: 1px;
+	width: 342px;
+	border: none;
+	background-color: #451e13;
+	height: 1.6px;
+}
+
+#product_p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 153.69%;
+}
+
+#amount {
+	margin-bottom: 7px;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.product_list select {
+	padding: 0 12px;
+	width: 80.38px;
+	height: 42.18px;
+	border: 1px solid #451e13;
+	background-color: transparent;
+	border-radius: 20px;
+	color: #451e13;
+	box-shadow: 0 0 1px 1px rgba(48, 21, 21, 0);
+	transition: 0.17s linear;
+
+	font-family: Neometric;
+	font-size: 19px;
+	font-weight: 300;
+}
+
+.product_list option {
+	font-weight: 300;
+	background-color: #ccc5b0;
+}
+
+.product_list select:focus {
+	outline: none;
+	box-shadow: 0 0px 1px 1px #451e13a1;
+}
+
+.send_survey {
+	margin-top: 6px;
+	background-color: #9f2f20;
+	border-radius: 20px;
+	width: 161.55px;
+	height: 44.57px;
+	color: #e2ded2;
+	border: none;
+	font-family: Neometric;
+
+	font-size: 17px;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.send_survey:hover {
+	box-shadow: 0 1px 3px 0 #451e13;
+}
+
+.send_survey a {
+	text-align: center;
+	color: #e2ded2;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.description_calories ul {
+	margin-top: 70px;
+	margin-left: -23px;
+	display: flex;
+}
+.description_calories li {
+	font-weight: 400;
+	list-style-type: none;
+}
+.description_calories li:not(:last-child) {
+	margin-right: 70px;
+}
+
+.container_description_calories {
+	width: 936px;
+	height: 255.45px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -50px;
+	background: #c7b6a4;
+	border-radius: 20px;
+	border-top-left-radius: 10px;
+}
+
+.container_description_calories_before {
+	width: 135.29px;
+	height: 45.36px;
+	margin-top: -4px;
+	background: #c7b6a4;
+	border-radius: 20px;
+}
+
+.container_description_calories_click {
+	width: 335.29px;
+}
+.description a {
+	color: #451e13;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.description a:focus {
+	font-weight: 600;
+}
+
+.calories a {
+	color: #451e13;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.calories a:focus {
+	font-weight: 600;
+}
+
+.calories a:focus::before {
+	white-space: pre;
+	content: '1% нежного хрустящего теста 99% фермерского мягчайшего сыра: ) \0a 100 гр. \0a \0a Белки — 10 г., жиры — 5 г., углеводы — 2,5 г. 319 ккал';
+	position: absolute;
+	width: 936px;
+	height: 190px;
+	left: 296px;
+	top: 824.5px;
+	z-index: 2;
+	background: #c7b6a4;
+	font-weight: 400;
+	font-size: 17px;
+	padding: 30px 30px;
+	border-radius: 20px;
+}
+
+.calories a:focus::after {
+	content: attr(data-title);
+	position: absolute;
+	/*clip-path: polygon(
+		0% 15%,
+		16% 15%,
+		18% 0%,
+		43% 0,
+		45% 14%,
+		95% 10%,
+		100% 85%,
+		100% 100%,
+		85% 100%,
+		15% 100%,
+		0 100%,
+		0% 85%
+	);*/
+	filter: url(#round);
+	width: 425px;
+	height: 4px;
+	left: 296px;
+	top: 752px;
+	z-index: 1;
+	background: #c7b6a4;
+	font-weight: 600;
+	font-size: 17px;
+	padding: 53px 30px;
+	border-radius: 20px;
+}
+@media screen and (min-width: 1537px) {
+	.calories a:focus::before {
+		display: none;
+	}
+	.calories a:focus::after {
+		display: none;
+	}
+}
+@media screen and (max-width: 1535px) {
+	.calories a:focus::before {
+		display: none;
+	}
+	.calories a:focus::after {
+		display: none;
+	}
+}
+.description_h_1 {
+	position: relative;
+	top: 40px;
+	font-weight: 600;
+	font-size: 17px;
+	left: 30px;
+}
+
+.description_p_1 {
+	position: relative;
+	top: 40px;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 30px;
+	left: 30px;
+}
+
+/* recommendations */
+.popular_h {
+	font-family: Amatic SC;
+	font-weight: 700;
+	margin-top: 185px;
+	font-size: 60px;
+	text-align: center;
+}
+
+.popular_products {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.popular_product_container {
+	width: 216px;
+	height: 314.4px;
+	background-color: #c7b6a4;
+	border-radius: 20px;
+}
+
+.popular_products img {
+	width: 25px;
+	height: 25px;
+}
+
+#popular_croissant {
+	margin-left: 4px;
+	margin-top: 18px;
+	width: 210px;
+	height: 180px;
+}
+
+#popular_banana_bread {
+	margin-top: -10px;
+	margin-left: -80px;
+	width: 335px;
+	height: 224px;
+}
+
+#popular_grain_bread {
+	margin-left: -8px;
+	margin-top: -10px;
+	width: 215px;
+	height: 215px;
+	transform: rotate(15.87deg);
+}
+
+#popular_toast {
+	margin-top: 0px;
+	margin-left: 8px;
+	width: 204px;
+	height: 204px;
+}
+
+#popular_info_1 {
+	margin-top: 3px;
+	width: 25px;
+	height: 25px;
+	margin-left: 180px;
+	cursor: pointer;
+}
+
+.popular_info {
+	display: inline-block;
+	position: relative;
+}
+.popular_info:hover::after {
+	content: attr(data-title);
+	position: absolute;
+	left: 10px;
+	top: 90%;
+	height: 80px;
+	z-index: 1;
+	background: #c7b6a4;
+	font-weight: 300;
+
+	padding: 5px 10px;
+	/*border: 1px solid rgb(68, 44, 44);*/
+	border-radius: 15px;
+}
+#popular_info_2 {
+	margin-top: -50px;
+	z-index: 1;
+	width: 25px;
+	height: 25px;
+	margin-left: 180px;
+}
+
+#popular_info_3 {
+	margin-top: -5px;
+	width: 25px;
+	height: 25px;
+	margin-left: 180px;
+}
+
+#popular_info_4 {
+	margin-top: -5px;
+	width: 25px;
+	height: 25px;
+	margin-left: 180px;
+}
+.popular_text_price ul {
+	margin-top: 2px;
+	margin-left: -25px;
+	margin-bottom: -9px;
+	display: flex;
+}
+.popular_text_price li {
+	font-size: 20px;
+	font-weight: 300;
+	list-style-type: none;
+}
+.popular_text_price li:not(:last-child) {
+	margin-right: 80px;
+}
+
+.popular_text_basket_1 ul {
+	margin-left: -25px;
+	margin-bottom: -12px;
+	display: flex;
+}
+.popular_text_basket_1 li {
+	font-size: 20px;
+	list-style-type: none;
+}
+.popular_text_basket_1 li:not(:last-child) {
+	margin-right: 57px;
+}
+
+.popular_text_basket_2 ul {
+	margin-left: -25px;
+	margin-bottom: -12px;
+	display: flex;
+}
+.popular_text_basket_2 li {
+	font-size: 20px;
+	list-style-type: none;
+}
+.popular_text_basket_2 li:not(:last-child) {
+	margin-right: 34px;
+}
+
+.popular_text_basket_3 ul {
+	margin-left: -25px;
+	margin-bottom: -12px;
+	display: flex;
+}
+.popular_text_basket_3 li {
+	font-size: 20px;
+	list-style-type: none;
+}
+.popular_text_basket_3 li:not(:last-child) {
+	margin-right: 52px;
+}
+
+.popular_text_basket_4 ul {
+	margin-left: -25px;
+	margin-bottom: -12px;
+	display: flex;
+}
+.popular_text_basket_4 li {
+	font-size: 20px;
+	list-style-type: none;
+}
+.popular_text_basket_4 li:not(:last-child) {
+	margin-right: 55px;
+}
+
+#popular_basket {
+	margin-top: 5px;
+	width: 32px;
+	height: 32px;
+}
+.button_product {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-top: 60px;
+	width: 206.4px;
+	height: 52px;
+	border: none;
+	font-family: Montserrat;
+	font-size: 19px;
+	color: #e2ded2;
+	background: #9f2f20;
+	border-radius: 20px;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+.button_product:hover {
+	box-shadow: 0 2px 7px 0 #451e13;
+}
+/* footer */
+
+.footer {
+	width: 100%;
+	margin-top: 113px;
+	left: 0;
+	right: 0;
+	background-color: #ccc5b0;
+	color: #451e13;
+}
+
+.footer_inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_left {
+	margin-top: 0;
+	font-size: 14px;
+}
+.adress {
+	margin-bottom: -7px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 28px;
+}
+
+.footer_right {
+	margin-top: 0;
+	font-size: 14px;
+	text-align: end;
+}
+.contacts {
+	margin-bottom: -7px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 28px;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+}
+.social_item {
+	display: block;
+	/*	background-color: #451e13;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40px;
+	border-radius: 50%;
+	color: #451e13;*/
+	margin: 0 11px;
+
+	text-decoration: none;
+}
+
+.social_item img {
+	width: 37px;
+	height: 37px;
+	color: #451e13;
+	transition: 0.3s;
+}
+
+.social_item img:hover {
+	width: 45px;
+	height: 45px;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer li {
+	margin-bottom: 5px;
+	list-style-type: none;
+}
+
+footer ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+	width: 13px;
+}
+
+/*::-webkit-scrollbar-track {
+	background:
+}*/
+
+::-webkit-scrollbar-thumb {
+	background: #a58e70c4;
+	border-radius: 20px;
+	/*	border: 2px solid #e5e5e5;*/
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #a58e70;
+	border-radius: 20px;
+	/*border: 2px solid #e5e5e5;*/
+}
